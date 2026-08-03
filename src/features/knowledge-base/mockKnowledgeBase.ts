@@ -1,0 +1,101 @@
+import type { KnowledgeBaseManual, KnowledgeBaseRecord } from "@/types";
+
+// Mock data — replaced with real API calls (knowledgeBase.service.ts)
+// in Phase 6.
+export const MOCK_MANUALS: KnowledgeBaseManual[] = [
+  {
+    id: "man_001",
+    brand: "LG",
+    model: "WM3700HVA",
+    deviceCategory: "Washing Machine",
+    pages: 124,
+    chunks: 892,
+    status: "indexed",
+    uploadedAt: "Jul 18, 2026",
+  },
+  {
+    id: "man_002",
+    brand: "Samsung",
+    model: "RF28R7351SR",
+    deviceCategory: "Refrigerator",
+    pages: 98,
+    chunks: 741,
+    status: "indexed",
+    uploadedAt: "Jul 08, 2026",
+  },
+  {
+    id: "man_003",
+    brand: "Daikin",
+    model: "FTXS Series",
+    deviceCategory: "Air Conditioner",
+    pages: 156,
+    chunks: 1203,
+    status: "indexed",
+    uploadedAt: "Jul 05, 2026",
+  },
+  {
+    id: "man_004",
+    brand: "Panasonic",
+    model: "NN-SN65KW",
+    deviceCategory: "Microwave",
+    pages: 48,
+    chunks: 312,
+    status: "indexed",
+    uploadedAt: "Jul 01, 2026",
+  },
+  {
+    id: "man_005",
+    brand: "HP",
+    model: "LaserJet Pro M404",
+    deviceCategory: "Printer",
+    pages: 210,
+    chunks: 1584,
+    status: "processing",
+    uploadedAt: "Jul 27, 2026",
+  },
+  {
+    id: "man_006",
+    brand: "Bosch",
+    model: "SMV68TX36E",
+    deviceCategory: "Dishwasher",
+    pages: 76,
+    chunks: null,
+    status: "queued",
+    uploadedAt: "Jul 27, 2026",
+  },
+];
+
+export const MOCK_KB_RECORDS: KnowledgeBaseRecord[] = [
+  {
+    id: "KB-001",
+    deviceCategory: "LG Washing Machine",
+    symptom: "Error code OE",
+    possibleCause: "Blocked drain filter or kinked hose",
+    severity: "medium",
+    difficulty: "easy",
+  },
+  {
+    id: "KB-002",
+    deviceCategory: "Samsung Refrigerator",
+    symptom: "Not cooling",
+    possibleCause: "Dirty condenser coils or faulty fan",
+    severity: "high",
+    difficulty: "medium",
+  },
+  {
+    id: "KB-003",
+    deviceCategory: "Daikin Air Conditioner",
+    symptom: "E1 error code",
+    possibleCause: "Indoor ambient temperature sensor fault",
+    severity: "medium",
+    difficulty: "hard",
+  },
+  {
+    id: "KB-004",
+    deviceCategory: "Panasonic Microwave",
+    symptom: "Turntable not rotating",
+    possibleCause: "Worn drive coupler or faulty motor",
+    severity: "low",
+    difficulty: "easy",
+  },
+];
