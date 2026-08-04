@@ -1,27 +1,17 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# OS files
+.DS_Store
+Thumbs.db
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
+# Each subproject's node_modules/dist/env are also gitignored inside
+# their own folders (frontend/.gitignore, backend/.gitignore) — these
+# root-level entries are a safety net in case something is ever run
+# from the repo root instead of the subfolder.
+node_modules/
+dist/
 .env
 .env.*.local
