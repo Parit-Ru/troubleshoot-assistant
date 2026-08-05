@@ -1,9 +1,19 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { Module } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config";
+import { AppController } from "./app.controller";
+import { AppService } from "./app.service";
 
 @Module({
-  imports: [],
+  imports: [
+    // isGlobal: true means every module in the app can inject ConfigService
+    // without each one separately importing ConfigModule — appropriate
+    // here since nearly every module we build (auth, database, AI) will
+    // need config values.
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: ".env",
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
