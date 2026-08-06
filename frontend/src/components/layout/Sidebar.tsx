@@ -10,6 +10,7 @@ import { cn } from "@/utils/cn";
 const NAV_ITEMS = [
   { to: "/", label: "Home", end: true },
   { to: "/troubleshoot", label: "AI Assistant" },
+  { to: "/chat", label: "Chat" },
   { to: "/history", label: "History" },
   { to: "/analytics", label: "Analytics" },
   { to: "/knowledge-base", label: "Knowledge Base" },
