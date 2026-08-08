@@ -1,0 +1,287 @@
+[
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p49_c1",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 49,
+    "content": "If the fridge/freezer does not operate or the fridge/freezer temperature is warm, possible causes include: power cord is not plugged in properly; temperature control is not set correctly; refrigerator is located near a heat source or direct sunlight; not enough clearance between refrigerator and sides/rear; vacation mode is activated; or the refrigerator is overloaded with food blocking the refrigerator vents. To resolve this: Properly plug in the power cord. Set the temperature lower. Keep the refrigerator away from direct sunlight or a heat source. Maintain a gap between the refrigerator and nearby walls (or cabinets) of more than 50 mm. Deactivate vacation mode. Do not overload the refrigerator and do not allow food to block ventilation.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Fridge/freezer does not operate or temperature is warm",
+      "possible_cause": "Power cord not plugged in properly; temperature control not set correctly; located near heat source or direct sunlight; insufficient clearance between refrigerator and sides/rear; vacation mode activated; refrigerator overloaded with food blocking vents.",
+      "solution": "1. Properly plug in the power cord.\n2. Set the temperature lower.\n3. Keep the refrigerator away from direct sunlight or a heat source.\n4. Ensure the gap between the refrigerator and nearby walls (or cabinets) is more than 50 mm.\n5. Deactivate vacation mode.\n6. Do not overload the refrigerator and do not allow food to block ventilation.",
+      "severity": "medium",
+      "safety_warning": "Keep the refrigerator away from direct sunlight or a heat source.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p49_c2",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 49,
+    "content": "If the fridge/freezer is over-cooling, the temperature control may not be set correctly. To resolve this, set the temperature higher.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Fridge/freezer is over-cooling",
+      "possible_cause": "Temperature control is not set correctly.",
+      "solution": "1. Set the temperature higher.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p49_c3",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 49,
+    "content": "If the interior wall is hot, the refrigerator has heat-proof piping in the interior wall. To prevent condensation from forming, the refrigerator has heat-proof piping in the front corners. If the ambient temperature rises, this equipment may not work effectively. This is normal and not a system failure.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Interior wall is hot",
+      "possible_cause": "Refrigerator has heat-proof piping in the interior wall to prevent condensation from forming in the front corners.",
+      "solution": "",
+      "severity": "low",
+      "safety_warning": "Interior wall has heat-proof piping.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p50_c4",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 50,
+    "content": "If the refrigerator has odours, the possible causes are spoiled food or food with strong odours. To resolve this: Clean the refrigerator and remove any spoiled food, and make sure strong smelling food is wrapped airtight.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Refrigerator has odours",
+      "possible_cause": "Spoiled food or food with strong odours.",
+      "solution": "1. Clean the refrigerator and remove any spoiled food.\n2. Make sure strong smelling food is wrapped airtight.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p50_c5",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 50,
+    "content": "If condensation forms on the interior walls, possible causes are: if the door is left open, moisture enters the refrigerator; or food with high moisture content is stored. To resolve this: Remove the moisture and do not open the door for a long time, and make sure food is wrapped airtight.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Condensation forms on the interior walls",
+      "possible_cause": "Door left open allowing moisture to enter, or food with high moisture content.",
+      "solution": "1. Remove the moisture and do not open the door for a long time.\n2. Make sure food is wrapped airtight.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p50_c6",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 50,
+    "content": "For Auto Ice Maker models, if the ice maker does not produce ice, possible causes include: the freezer room is not cold enough; the wire connector of the ice maker is not connected properly; or the water line flowing to the ice maker is bent or kinked. To resolve this: Make sure the cold air outlet is not clogged. Make sure the wire connector from the wire housing is connected properly. Make sure the water line in the rear of the refrigerator is not bent or kinked.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "The ice maker does not produce ice",
+      "possible_cause": "Freezer room not cold enough; wire connector of ice maker not connected properly; water line flowing to ice maker bent or kinked.",
+      "solution": "1. Make sure the cold air outlet is not clogged.\n2. Make sure the wire connector from the wire housing is connected properly.\n3. Make sure the water line in the rear of the refrigerator is not bent or kinked.",
+      "severity": "medium",
+      "safety_warning": "Wire connector of the ice maker.",
+      "difficulty": "medium"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p51_c7",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 51,
+    "content": "Abnormal sounds from the refrigerator: The refrigerator may make clicking, chirping, buzzing, whirring (SSSRRR!), or sizzling (HiSS!) sounds. When starting or ending an operation, the refrigerator may make sounds similar to a car engine igniting, which decrease as operation stabilizes. Buzzing or whirring occurs while the fan operates and stops when set temperature is reached. During a defrost cycle, water dripping on the defrost heater causes sizzling sounds. These sounds are normal.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Abnormal sounds from the refrigerator (Clicking, Chirping, Buzzing, SSSRRR!, Whir!, HiSS!)",
+      "possible_cause": "Normal operation when starting/ending operation, fan operating, or water dripping on the defrost heater during a defrost cycle.",
+      "solution": "",
+      "severity": "low",
+      "safety_warning": "Defrost heater causes sizzling sounds.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p52_c8",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 52,
+    "content": "Abnormal sounds from the refrigerator: The refrigerator may make bubbling, cracking, buzzing, or whooshing sounds. Bubbling sounds are caused by refrigerant gas moving through sealed pipes as the refrigerator cools or freezes. Cracking/knocking sounds occur as plastic parts contract and expand when temperature increases or decreases during defrosting or when electronic parts are working. For ice maker models, buzzing sounds occur when the water valve opens to fill the ice maker. Whooshing sounds occur because of pressure equalizing when opening and closing the refrigerator door. These sounds are normal.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Abnormal sounds from the refrigerator (Bubbling!, Cracking!, Buzzing!, Whooshing!)",
+      "possible_cause": "Refrigerant gas moving through sealed pipes, plastic parts contracting/expanding during defrosting or electronic operations, water valve opening to fill ice maker, or pressure equalizing when opening/closing door.",
+      "solution": "",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p53_c9",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 53,
+    "content": "If you could not find \"SmartThings\" in the app market, note that the supporting software version of the SmartThings app is subject to change according to the OS supporting policy the manufacturer provides. In addition, as for the SmartThings app or the functions that the app supports, the new application update policy on the existing OS version can be suspended due to usability or security reasons.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Could not find “SmartThings” in the app market",
+      "possible_cause": "Software version support changes according to manufacturer OS policy or update policies suspended for usability or security reasons.",
+      "solution": "",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p53_c10",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 53,
+    "content": "If the SmartThings app fails to operate, note that the SmartThings app is available for applicable models only, and the old Samsung Smart Refrigerator app cannot connect with Samsung Smart Home models.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "The SmartThings app fails to operate",
+      "possible_cause": "App is available for applicable models only, or trying to connect using the old Samsung Smart Refrigerator app with Samsung Smart Home models.",
+      "solution": "",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p53_c11",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 53,
+    "content": "If the SmartThings app is installed but is not connected to your refrigerator, take the following actions: You must log into your Samsung account to use the app. Make sure that your router is operating normally. If the Wi-Fi icon on the refrigerator's display is off, no network connection has been established yet; use the SmartThings app to connect and register your refrigerator to the access point (AP) of your house.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "The SmartThings app is installed but is not connected to my refrigerator",
+      "possible_cause": "Not logged into Samsung account, router not operating normally, or refrigerator not yet registered/connected to home access point (AP).",
+      "solution": "1. Log into your Samsung account.\n2. Make sure that your router is operating normally.\n3. If the Wi-Fi icon on the display is off, use the SmartThings app to connect and register your refrigerator to the access point (AP) of your house.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p53_c12",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 53,
+    "content": "If you could not log into the app, you must log into your Samsung account to use the app. If you don't have a Samsung account, follow the app's onscreen instructions to create one.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Could not log into the app",
+      "possible_cause": "Not logged into a Samsung account or lacking a Samsung account.",
+      "solution": "1. Log into your Samsung account.\n2. If you don't have a Samsung account, follow the app's onscreen instructions to create one.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p53_c13",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 53,
+    "content": "If an error message appears when trying to register your refrigerator, Easy Connection may fail due to the distance from your access point (AP) or electrical interference from the surrounding environment. Wait a moment and try again.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "An error message appears when I try to register my refrigerator",
+      "possible_cause": "Easy Connection failed due to distance from access point (AP) or electrical interference from surrounding environment.",
+      "solution": "1. Wait a moment and try again.",
+      "severity": "low",
+      "safety_warning": "Electrical interference from the surrounding environment.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p53_c14",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 53,
+    "content": "If the SmartThings app is successfully connected to your refrigerator but does not run, perform the following actions: Exit and restart the SmartThings app, or disconnect and reconnect the router. Power off the refrigerator, and then power it on again after 1 minute.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "The SmartThings app is successfully connected to my refrigerator but does not run",
+      "possible_cause": "App or router connection glitch.",
+      "solution": "1. Exit and restart the SmartThings app, or disconnect and reconnect the router.\n2. Power off the refrigerator, and then power it on again after 1 minute.",
+      "severity": "low",
+      "safety_warning": "Power off the refrigerator, and then power it on again.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Refrigerator_RT6300C_p53_c15",
+    "device_category": "Refrigerator",
+    "brand": "Samsung",
+    "model": "RT6300C",
+    "source": "manual_Samsung_Refrigerator_RT6300C",
+    "page": 53,
+    "content": "If the Wi-Fi icon is blinking, connect your refrigerator with the SmartThings app before use. When the connection is made successfully, the indicator stops blinking. If you fail to make connection or don't want to use the app, press and hold the Fridge button for 10 seconds; the indicator stops blinking.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "The Wi-Fi icon is blinking",
+      "possible_cause": "Refrigerator is not connected with the SmartThings app.",
+      "solution": "1. Connect your refrigerator with the SmartThings app before use.\n2. If connection fails or you don't want to use the app, press and hold the Fridge button for 10 seconds to stop the indicator from blinking.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  }
+]

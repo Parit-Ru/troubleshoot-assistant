@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Each subproject's node_modules/dist/env are also gitignored inside
+# their own folders (frontend/.gitignore, backend/.gitignore) — these
+# root-level entries are a safety net in case something is ever run
+# from the repo root instead of the subfolder.
+node_modules/
+dist/
+.env
+.env.*.local

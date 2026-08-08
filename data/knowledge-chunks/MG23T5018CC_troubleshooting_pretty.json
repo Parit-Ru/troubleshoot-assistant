@@ -1,0 +1,553 @@
+[
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p39_c1",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 39,
+    "content": "The buttons cannot be pressed properly. Foreign matter may be caught between the buttons. For touch models: Moisture is on the exterior. Child lock is activated. Remove foreign matter, wipe moisture, or deactivate Child lock.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Buttons cannot be pressed properly",
+      "possible_cause": "Foreign matter; Moisture on exterior (touch models); Child lock activated",
+      "solution": "1. Remove foreign matter.\n2. Wipe moisture.\n3. Deactivate Child lock.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p39_c2",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 39,
+    "content": "The time is not displayed. The Eco (power-saving) function is set. Turn off the Eco function.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Time is not displayed",
+      "possible_cause": "Eco function is set",
+      "solution": "1. Turn off the Eco function.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p39_c3",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 39,
+    "content": "The microwave oven does not work. No power is supplied, the door is open, or foreign matter is blocking the door safety mechanisms. Make sure power is supplied, close the door, and remove any foreign matter.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Microwave does not work",
+      "possible_cause": "No power; Door open; Door safety mechanisms blocked",
+      "solution": "1. Make sure power is supplied.\n2. Close the door.\n3. Remove foreign matter.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p39_c4",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 39,
+    "content": "The microwave oven stops while in operation. This happens when the door is opened to turn the food. Press START/+30s after turning the food to resume cooking.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Stops during operation",
+      "possible_cause": "Door opened to turn food",
+      "solution": "1. Press START/+30s after turning food.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p39_c5",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 39,
+    "content": "The power turns off during operation. This can be caused by extended cooking time, the cooling fan not working, no food inside the oven, poor ventilation, or using a shared electrical socket. Let the oven cool after extended cooking, check the cooling fan, make sure food is inside, keep ventilation gaps clear, and use a dedicated socket.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Power turns off during operation",
+      "possible_cause": "Extended cooking; Cooling fan not working; No food inside; Poor ventilation; Shared socket",
+      "solution": "1. Let oven cool.\n2. Check cooling fan.\n3. Put food inside.\n4. Keep ventilation gaps.\n5. Use one socket only.",
+      "severity": "medium",
+      "safety_warning": "Let the microwave oven cool after extended cooking.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p39_c6",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 39,
+    "content": "There is a popping sound during operation and the oven does not work. This is caused by cooking sealed food or using a lidded container. Do not use sealed containers, as they may burst during cooking.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Popping sound and doesn't work",
+      "possible_cause": "Cooking sealed food or lidded container",
+      "solution": "1. Do not use sealed containers.",
+      "severity": "high",
+      "safety_warning": "Sealed containers may burst during cooking.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c7",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "The microwave oven exterior is too hot during operation.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Exterior too hot",
+      "possible_cause": "Poor ventilation; Objects on top",
+      "solution": "1. Keep ventilation gaps.\n2. Remove objects.",
+      "severity": "medium",
+      "safety_warning": "Exterior is hot during operation.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c8",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "The door cannot be opened properly.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Door cannot be opened",
+      "possible_cause": "Food residue stuck",
+      "solution": "1. Clean microwave and open door.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c9",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "Heating including Warm function does not work properly.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Heating/Warm not working",
+      "possible_cause": "Too much food; Improper cookware; Microwave may not work",
+      "solution": "1. Heat one cup of water for 1-2 minutes.\n2. Reduce food.\n3. Use flat-bottom container.",
+      "severity": "medium",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c10",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "The thaw function does not work.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Thaw function does not work",
+      "possible_cause": "Too much food",
+      "solution": "1. Reduce food and restart.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c11",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "The interior light is dim or does not turn on.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Interior light dim/off",
+      "possible_cause": "Door left open long; Light covered by foreign matter",
+      "solution": "1. Close/reopen door or press STOP/Eco.\n2. Clean interior.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c12",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "A beeping sound occurs during cooking.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Beeping during cooking",
+      "possible_cause": "Auto Cook indicates turn food",
+      "solution": "1. Turn food and press START/+30s.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c13",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "The microwave oven is not level.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Microwave not level",
+      "possible_cause": "Uneven installation surface",
+      "solution": "1. Install on flat stable surface.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c14",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "There are sparks during cooking.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Sparks during cooking",
+      "possible_cause": "Metal containers used",
+      "solution": "1. Do not use metal containers.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c15",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "When power is connected, the microwave oven immediately starts to work.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Starts immediately when powered",
+      "possible_cause": "Door not properly closed",
+      "solution": "1. Close door and check again.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c16",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "There is electricity coming from the microwave oven.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Electricity coming from microwave",
+      "possible_cause": "Power or socket not properly grounded",
+      "solution": "1. Ensure power and socket are properly grounded.",
+      "severity": "medium",
+      "safety_warning": "Make sure the power and power socket are properly grounded.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p40_c17",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 40,
+    "content": "Water drips, steam emits, or water remains.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Water drips/steam/water remains",
+      "possible_cause": "Water or steam depending on food",
+      "solution": "1. Let oven cool.\n2. Wipe with dry dish towel.",
+      "severity": "low",
+      "safety_warning": "Let the microwave oven cool.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c18",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Brightness inside varies.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Brightness varies",
+      "possible_cause": "Power output changes by function",
+      "solution": "1. No action. This is not a malfunction.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c19",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Cooling fan is still running.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Cooling fan still running",
+      "possible_cause": "Fan ventilates for about 3 minutes",
+      "solution": "1. No action. This is not a malfunction.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c20",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Turntable comes out of place.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Turntable comes out/stops",
+      "possible_cause": "Roller ring missing/improper",
+      "solution": "1. Install roller ring.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c21",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Turntable drags.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Turntable drags",
+      "possible_cause": "Roller ring improper; Too much food; Container too large",
+      "solution": "1. Reduce food.\n2. Do not use oversized containers.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c22",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Turntable rattles.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Turntable rattles",
+      "possible_cause": "Food residue on bottom",
+      "solution": "1. Remove food residue.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c23",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Smoke comes out during grill operation.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Smoke from grill",
+      "possible_cause": "Initial use; Food on heating elements; Food too close; Improper preparation",
+      "solution": "1. Run 2-3 times if initial use.\n2. Remove food from elements.\n3. Move food away.\n4. Prepare food properly.",
+      "severity": "low",
+      "safety_warning": "Let the microwave oven cool before removing food.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c24",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Microwave oven does not heat.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Microwave does not heat",
+      "possible_cause": "Door open",
+      "solution": "1. Close door and try again.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c25",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Smoke comes out during preheating.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Smoke during preheating",
+      "possible_cause": "Initial use; Food on heating elements",
+      "solution": "1. Run 2-3 times if initial use.\n2. Remove food after cooling.",
+      "severity": "low",
+      "safety_warning": "Let the microwave oven cool before removing food.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p41_c26",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 41,
+    "content": "Burning or plastic smell.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Burning/plastic smell",
+      "possible_cause": "Plastic or non heat-resistant cookware",
+      "solution": "1. Use glass cookware suitable for high temperatures.",
+      "severity": "low",
+      "safety_warning": "Use heat-resistant cookware.",
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p42_c27",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 42,
+    "content": "Bad smell inside microwave.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Bad smell inside",
+      "possible_cause": "Food residue or melted plastic",
+      "solution": "1. Use steam function.\n2. Wipe with dry cloth.\n3. Use lemon slice to remove odour.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p42_c28",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 42,
+    "content": "Microwave oven does not cook properly.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Does not cook properly",
+      "possible_cause": "Door opened frequently; Controls incorrect; Accessories incorrect; Wrong cookware",
+      "solution": "1. Avoid opening door often.\n2. Set controls correctly.\n3. Insert accessories correctly.\n4. Use suitable flat-bottom cookware.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  },
+  {
+    "chunk_id": "manual_Samsung_Microwave_MG23T5018CC_p42_c29",
+    "device_category": "Microwave",
+    "brand": "Samsung",
+    "model": "MG23T5018CC",
+    "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+    "page": 42,
+    "content": "Information code C-d0 displayed.",
+    "embedding": null,
+    "metadata": {
+      "symptom": "Information code C-d0",
+      "possible_cause": "Buttons pressed over 10 seconds",
+      "solution": "1. Clean keys.\n2. Check for water around key.\n3. Turn off for over 30 seconds and try again.\n4. Call Samsung Customer Care Centre if it reappears.",
+      "severity": "low",
+      "safety_warning": null,
+      "difficulty": "easy"
+    },
+    "created_at": null
+  }
+]
