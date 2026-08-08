@@ -7,7 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { ChatModule } from './chat/chat.module';
 import { TroubleshootModule } from './ai/troubleshoot.module';
-
+import { KnowledgeBaseModule } from './ai/knowledge-base.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -18,6 +18,7 @@ import { TroubleshootModule } from './ai/troubleshoot.module';
     UsersModule,
     ChatModule,
     TroubleshootModule,
+    KnowledgeBaseModule,
   ],
   controllers: [AppController],
   providers: [AppService],

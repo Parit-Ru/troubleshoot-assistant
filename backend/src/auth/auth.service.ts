@@ -15,7 +15,7 @@ export class AuthService {
     if (existing) throw new UnauthorizedException('Email already registered');
     const hash = await bcrypt.hash(password, 10);
     const user = await this.usersService.create(email, hash, fullName);
-    return this.signToken(user.id, user.email);
+    return this.buildAuthResult(user.id, user.email, user.role, user.full_name);
   }
 
   async login(email: string, password: string) {
@@ -23,10 +23,14 @@ export class AuthService {
     if (!user) throw new UnauthorizedException('Invalid credentials');
     const valid = await bcrypt.compare(password, user.password_hash);
     if (!valid) throw new UnauthorizedException('Invalid credentials');
-    return this.signToken(user.id, user.email);
+    return this.buildAuthResult(user.id, user.email, user.role, user.full_name);
   }
 
-  private signToken(sub: string, email: string) {
-    return { access_token: this.jwtService.sign({ sub, email }) };
+  private buildAuthResult(id: string, email: string, role: string, fullName: string | null) {
+    const token = this.jwtService.sign({ sub: id, email, role });
+    return {
+      token,
+      user: { id, name: fullName ?? email, email, role },
+    };
   }
 }

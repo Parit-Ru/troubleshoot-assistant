@@ -4,7 +4,7 @@ import { PG_POOL } from '../database/database.constants';
 
 @Injectable()
 export class UsersService {
-  constructor(@Inject(PG_POOL) private readonly pool: Pool) {}
+  constructor(@Inject(PG_POOL) private readonly pool: Pool) { }
 
   async findByEmail(email: string) {
     const result = await this.pool.query(
@@ -17,7 +17,7 @@ export class UsersService {
   async create(email: string, passwordHash: string, fullName?: string) {
     const result = await this.pool.query(
       `INSERT INTO users (email, password_hash, full_name)
-       VALUES ($1, $2, $3) RETURNING id, email, full_name, created_at`,
+       VALUES ($1, $2, $3) RETURNING id, email, full_name, role, created_at`,
       [email, passwordHash, fullName ?? null],
     );
     return result.rows[0];
