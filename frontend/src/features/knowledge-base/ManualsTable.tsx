@@ -1,24 +1,29 @@
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 import { ManualStatusBadge } from "@/features/knowledge-base/ManualStatusBadge";
-import { MOCK_MANUALS } from "@/features/knowledge-base/mockKnowledgeBase";
+import { knowledgeBaseService } from "@/services/knowledgeBase.service";
+import type { KnowledgeBaseManual } from "@/types";
 
 interface ManualsTableProps {
   searchTerm: string;
 }
 
 export function ManualsTable({ searchTerm }: ManualsTableProps) {
-  const filteredManuals = useMemo(() => {
-    if (searchTerm.trim() === "") return MOCK_MANUALS;
-    const term = searchTerm.toLowerCase();
-    return MOCK_MANUALS.filter(
-      (manual) =>
-        manual.brand.toLowerCase().includes(term) ||
-        manual.model.toLowerCase().includes(term) ||
-        manual.deviceCategory.toLowerCase().includes(term),
-    );
+  const [manuals, setManuals] = useState<KnowledgeBaseManual[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(true);
+    const timeout = setTimeout(() => {
+      knowledgeBaseService
+        .getManuals(searchTerm || undefined)
+        .then(setManuals)
+        .finally(() => setIsLoading(false));
+    }, 300); // debounce so every keystroke doesn't fire a request
+    return () => clearTimeout(timeout);
   }, [searchTerm]);
 
-  if (filteredManuals.length === 0) {
+  if (isLoading) return <p className="text-sm text-slate-500">Loading manuals...</p>;
+  if (manuals.length === 0) {
     return <p className="text-sm text-slate-500">No manuals match your search.</p>;
   }
 
@@ -36,7 +41,7 @@ export function ManualsTable({ searchTerm }: ManualsTableProps) {
           </tr>
         </thead>
         <tbody>
-          {filteredManuals.map((manual) => (
+          {manuals.map((manual) => (
             <tr
               key={manual.id}
               className="border-b border-slate-800 last:border-b-0 hover:bg-slate-900/50"
@@ -45,9 +50,7 @@ export function ManualsTable({ searchTerm }: ManualsTableProps) {
                 <p className="font-medium text-slate-100">{manual.brand}</p>
                 <p className="text-xs text-slate-500">{manual.model}</p>
               </td>
-              <td className="px-4 py-3 text-slate-300">
-                {manual.deviceCategory}
-              </td>
+              <td className="px-4 py-3 text-slate-300">{manual.deviceCategory}</td>
               <td className="px-4 py-3 text-slate-300">{manual.pages}</td>
               <td className="px-4 py-3 text-slate-300">
                 {manual.chunks !== null ? manual.chunks : "–"}
@@ -55,9 +58,7 @@ export function ManualsTable({ searchTerm }: ManualsTableProps) {
               <td className="px-4 py-3">
                 <ManualStatusBadge status={manual.status} />
               </td>
-              <td className="px-4 py-3 text-slate-500">
-                {manual.uploadedAt}
-              </td>
+              <td className="px-4 py-3 text-slate-500">{manual.uploadedAt}</td>
             </tr>
           ))}
         </tbody>

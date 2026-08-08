@@ -1,6 +1,7 @@
-import { Body, Controller, Post, Res } from '@nestjs/common';
-import type { Response } from 'express';
+import { Body, Controller, Post, Get, Res, Req, UseGuards } from '@nestjs/common';
+import type { Response, Request } from 'express';
 import { AuthService } from './auth.service';
+import { JwtAuthGuard } from './jwt-auth.guard';
 
 @Controller('auth')
 export class AuthController {
@@ -36,12 +37,18 @@ export class AuthController {
     return { success: true };
   }
 
+  @Get('me')
+  @UseGuards(JwtAuthGuard)
+  me(@Req() req: Request) {
+    return { user: req.user };
+  }
+
   private setCookie(res: Response, token: string) {
     res.cookie('token', token, {
       httpOnly: true,
-      secure: false, // set true in production (requires HTTPS)
+      secure: false,
       sameSite: 'lax',
-      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days, matches JwtModule's expiresIn
+      maxAge: 7 * 24 * 60 * 60 * 1000,
       path: '/',
     });
   }

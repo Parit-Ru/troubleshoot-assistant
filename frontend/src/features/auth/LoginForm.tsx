@@ -4,17 +4,18 @@ import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { AuthCard } from "@/features/auth/AuthCard";
 import { useAuthStore } from "@/store/useAuthStore";
+import { authService } from "@/services/auth.service";
 
 export function LoginForm() {
   const navigate = useNavigate();
-  const login = useAuthStore((state) => state.login);
+  const setUser = useAuthStore((state) => state.setUser);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
     if (email.trim() === "" || password.trim() === "") {
@@ -25,16 +26,15 @@ export function LoginForm() {
     setError(null);
     setIsSubmitting(true);
 
-    // Mock login — no real backend/password check until Phase 6.
-    // Simulated delay so the loading state is visibly testable.
-    setTimeout(() => {
-      login(
-        { id: "1", name: "John Doe", email, role: "general" },
-        "fake-jwt-token",
-      );
-      setIsSubmitting(false);
+    try {
+      const { user } = await authService.login(email, password);
+      setUser(user);
       navigate("/");
-    }, 600);
+    } catch (err) {
+      setError("Invalid email or password.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
