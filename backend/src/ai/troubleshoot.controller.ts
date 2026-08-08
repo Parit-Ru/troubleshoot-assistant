@@ -65,7 +65,7 @@ export class TroubleshootController {
   async listSessions() {
     const result = await this.pool.query(
       `SELECT id, device_category, brand, model, symptom, status,
-              confidence_score, insufficient_evidence, created_at
+              confidence_score, insufficient_evidence, created_at, "references"
        FROM troubleshoot_sessions
        ORDER BY created_at DESC
        LIMIT 50`,
