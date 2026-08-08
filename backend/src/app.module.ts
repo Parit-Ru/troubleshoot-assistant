@@ -6,6 +6,8 @@ import { DatabaseModule } from './database/database.module';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { ChatModule } from './chat/chat.module';
+import { TroubleshootModule } from './ai/troubleshoot.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -15,6 +17,7 @@ import { ChatModule } from './chat/chat.module';
     AuthModule,
     UsersModule,
     ChatModule,
+    TroubleshootModule,
   ],
   controllers: [AppController],
   providers: [AppService],

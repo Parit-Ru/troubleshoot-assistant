@@ -9,8 +9,8 @@ This is a single repository containing two independent projects:
 
 - **`/frontend`** — React + Vite + TypeScript + Tailwind CSS + React Router
   + TanStack Query + Zustand. See `frontend/README.md` for setup.
-- **`/backend`** — NestJS + PostgreSQL + Prisma + JWT auth. See
-  `backend/README.md` for setup (added in Phase 4).
+- **`/backend`** — NestJS + PostgreSQL + JWT auth. See
+  `backend/README.md` for setup 
 
 ## Quick Start
 
