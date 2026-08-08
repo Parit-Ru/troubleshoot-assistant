@@ -23,6 +23,21 @@ interface TroubleshootResultPanelProps {
 export function TroubleshootResultPanel({
   result,
 }: TroubleshootResultPanelProps) {
+  if (result.insufficientEvidence) {
+    return (
+      <Card className="flex flex-col gap-3">
+        <h2 className="text-sm font-semibold text-slate-100">
+          No Confident Match Found
+        </h2>
+        <p className="text-sm text-slate-300">
+          We couldn't find a reliable match for this symptom in our current
+          knowledge base. To avoid giving you an incorrect answer, we
+          recommend contacting an authorized service center or checking
+          your device's official manual directly.
+        </p>
+      </Card>
+    );
+  }
   return (
     <Card className="flex flex-col gap-5">
       <div className="flex items-center justify-between">

@@ -29,7 +29,7 @@ export class RetrievalService {
   constructor(
     @Inject(PG_POOL) private readonly pool: Pool,
     private readonly embeddingService: EmbeddingService,
-  ) {}
+  ) { }
 
   async retrieve(
     query: string,
@@ -52,8 +52,8 @@ export class RetrievalService {
       params.push(filters.brand);
     }
     if (filters.model) {
-      conditions.push(`model = $${paramIndex++}`);
-      params.push(filters.model);
+      conditions.push(`model ILIKE $${paramIndex++}`);
+      params.push(`%${filters.model}%`);
     }
 
     const whereClause = conditions.length ? `WHERE ${conditions.join(' AND ')}` : '';

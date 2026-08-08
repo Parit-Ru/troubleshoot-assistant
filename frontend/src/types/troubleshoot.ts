@@ -38,3 +38,11 @@ export interface TroubleshootSession {
   createdAt: string; // ISO date string
   result?: TroubleshootResult;
 }
+export interface TroubleshootResult {
+  possibleCauses: string[];
+  confidenceScore: number;
+  steps: string[];
+  safetyWarning?: string;
+  sources: SourceReference[];
+  insufficientEvidence?: boolean; // true when retrieval confidence was below threshold
+}
