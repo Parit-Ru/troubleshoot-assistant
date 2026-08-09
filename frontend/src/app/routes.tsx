@@ -10,21 +10,26 @@ import { LoginPage } from "@/pages/LoginPage";
 import { RegisterPage } from "@/pages/RegisterPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 
-export const router = createBrowserRouter([
-  { path: "/login", element: <LoginPage /> },
-  { path: "/register", element: <RegisterPage /> },
+export const router = createBrowserRouter(
+  [
+    { path: "/login", element: <LoginPage /> },
+    { path: "/register", element: <RegisterPage /> },
+    {
+      path: "/",
+      element: <AppShell />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: "troubleshoot", element: <TroubleshootPage /> },
+        { path: "troubleshoot/:sessionId", element: <TroubleshootPage /> },
+        { path: "chat", element: <ChatPage /> },
+        { path: "history", element: <HistoryPage /> },
+        { path: "analytics", element: <AnalyticsPage /> },
+        { path: "knowledge-base", element: <KnowledgeBasePage /> },
+      ],
+    },
+    { path: "*", element: <NotFoundPage /> },
+  ],
   {
-    path: "/",
-    element: <AppShell />,
-    children: [
-      { index: true, element: <HomePage /> },
-      { path: "troubleshoot", element: <TroubleshootPage /> },
-      { path: "troubleshoot/:sessionId", element: <TroubleshootPage /> },
-      { path: "chat", element: <ChatPage /> },
-      { path: "history", element: <HistoryPage /> },
-      { path: "analytics", element: <AnalyticsPage /> },
-      { path: "knowledge-base", element: <KnowledgeBasePage /> },
-    ],
-  },
-  { path: "*", element: <NotFoundPage /> },
-]);
+    basename: "/troubleshoot-assistant",
+  }
+);

@@ -1,8 +1,11 @@
-import { Body, Controller, Post, Get, Inject } from '@nestjs/common';
+import { Body, Controller, Post, Get, Inject, Req, UseGuards } from '@nestjs/common';
+import type { Request } from 'express';
 import { Pool } from 'pg';
 import { RetrievalService } from './retrieval/retrieval.service';
 import { GenerationService } from './generation/generation.service';
 import { PG_POOL } from '../database/database.constants';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { OptionalJwtAuthGuard } from '../auth/optional-jwt-auth.guard';
 
 interface TroubleshootRequestDto {
   symptom: string;
@@ -20,7 +23,10 @@ export class TroubleshootController {
   ) {}
 
   @Post()
-  async troubleshoot(@Body() body: TroubleshootRequestDto) {
+  @UseGuards(OptionalJwtAuthGuard)
+  async troubleshoot(@Body() body: TroubleshootRequestDto, @Req() req: Request) {
+    const userId = (req.user as { id: string } | undefined)?.id ?? null;
+
     const { chunks, sufficientEvidence } = await this.retrievalService.retrieve(
       body.symptom,
       {
@@ -38,12 +44,13 @@ export class TroubleshootController {
 
     const saved = await this.pool.query(
       `INSERT INTO troubleshoot_sessions
-        (device_category, brand, model, symptom, status, confidence_score,
+        (user_id, device_category, brand, model, symptom, status, confidence_score,
          possible_causes, solution_steps, safety_warnings, "references",
          insufficient_evidence)
-       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12)
        RETURNING id, created_at`,
       [
+        userId,
         body.deviceCategory ?? null,
         body.brand ?? null,
         body.model ?? null,
@@ -62,13 +69,17 @@ export class TroubleshootController {
   }
 
   @Get()
-  async listSessions() {
+  @UseGuards(JwtAuthGuard)
+  async listSessions(@Req() req: Request) {
+    const userId = (req.user as { id: string }).id;
     const result = await this.pool.query(
       `SELECT id, device_category, brand, model, symptom, status,
               confidence_score, insufficient_evidence, created_at, "references"
        FROM troubleshoot_sessions
+       WHERE user_id = $1
        ORDER BY created_at DESC
        LIMIT 50`,
+      [userId],
     );
     return result.rows;
   }

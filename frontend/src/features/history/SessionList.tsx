@@ -19,7 +19,13 @@ export function SessionList() {
     historyService
       .listSessions()
       .then(setSessions)
-      .catch(() => setError("Failed to load session history."))
+      .catch((err) => {
+        if (err.message.includes('401')) {
+          setError('Please log in to view your troubleshooting history.');
+        } else {
+          setError('Failed to load session history.');
+        }
+      })
       .finally(() => setIsLoading(false));
   }, []);
 
