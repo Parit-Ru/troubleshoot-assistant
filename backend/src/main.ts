@@ -7,7 +7,7 @@ async function bootstrap() {
   app.use(cookieParser());
   app.enableCors({
   origin: [
-    process.env.FRONTEND_URL,       // https://parit-ru.github.io
+    "https://parit-ru.github.io",       // https://parit-ru.github.io
     "http://localhost:5173",        // your local Vite dev server
   ],
   credentials: true,
