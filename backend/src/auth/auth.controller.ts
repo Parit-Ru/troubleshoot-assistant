@@ -44,12 +44,13 @@ export class AuthController {
   }
 
   private setCookie(res: Response, token: string) {
-    res.cookie('token', token, {
-      httpOnly: true,
-      secure: false,
-      sameSite: 'lax',
-      maxAge: 7 * 24 * 60 * 60 * 1000,
-      path: '/',
-    });
-  }
+  const isProd = process.env.NODE_ENV === 'production';
+  res.cookie('token', token, {
+    httpOnly: true,
+    secure: isProd,           // Render serves HTTPS, so true in production
+    sameSite: isProd ? 'none' : 'lax', // 'none' required for cross-site cookies
+    maxAge: 7 * 24 * 60 * 60 * 1000,
+    path: '/',
+  });
+}
 }
