@@ -1,14 +1,28 @@
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { StatPill } from "@/features/dashboard/StatPill";
-
-// Mock data — replaced with a real API call (dashboard.service.ts) in Phase 6
-const MOCK_STATS = [
-  { value: "12,480", label: "Knowledge Chunks" },
-  { value: "847", label: "Manuals Indexed" },
-  { value: "88.4%", label: "Avg Confidence" },
-];
+import { dashboardService } from "@/services/dashboard.service";
 
 export function HeroBanner() {
+  const [stats, setStats] = useState<{
+    chunkCount: number;
+    manualCount: number;
+    avgConfidence: number | null;
+  } | null>(null);
+
+  useEffect(() => {
+    dashboardService.getSummary().then(setStats).catch(() => setStats(null));
+  }, []);
+
+  const statPills = [
+    { value: stats ? String(stats.chunkCount) : "—", label: "Knowledge Chunks" },
+    { value: stats ? String(stats.manualCount) : "—", label: "Manuals Indexed" },
+    {
+      value: stats?.avgConfidence != null ? `${(stats.avgConfidence * 100).toFixed(1)}%` : "—",
+      label: "Avg Confidence",
+    },
+  ];
+
   return (
     <div className="flex flex-col justify-between gap-6 rounded-lg border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-800 p-8 md:flex-row md:items-center">
       <div>
@@ -30,7 +44,7 @@ export function HeroBanner() {
       </div>
 
       <div className="flex flex-row gap-3 md:flex-col">
-        {MOCK_STATS.map((stat) => (
+        {statPills.map((stat) => (
           <StatPill key={stat.label} value={stat.value} label={stat.label} />
         ))}
       </div>

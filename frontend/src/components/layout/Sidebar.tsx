@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { cn } from "@/utils/cn";
+import { useAuthStore } from "@/store/useAuthStore";
+import { Button } from "@/components/ui/Button";
 
 /**
  * Sidebar nav items, matching the Figma design and approved sitemap.
@@ -17,6 +19,9 @@ const NAV_ITEMS = [
 ];
 
 export function Sidebar() {
+  const user = useAuthStore((state) => state.user);
+  const logout = useAuthStore((state) => state.logout);
+
   return (
     <aside className="flex h-full w-60 flex-col border-r border-slate-800 bg-slate-900">
       <div className="flex items-center gap-2 px-4 py-5">
@@ -51,10 +56,42 @@ export function Sidebar() {
         ))}
       </nav>
 
-      {/* Placeholder user info — replaced with real auth data in Phase 6 */}
+      {/* Bottom section: reflects real auth state from useAuthStore.
+          No real backend auth exists yet (Phase 4.7/6) — this is still
+          driven by the mock login() call in LoginForm/RegisterForm from
+          Phase 3.6, just no longer hardcoded as always "logged in". */}
       <div className="border-t border-slate-800 px-4 py-4">
-        <p className="text-sm font-medium text-slate-100">John Doe</p>
-        <p className="text-xs text-slate-500">General User</p>
+        {user ? (
+          <div className="flex items-center justify-between gap-2">
+            <div className="min-w-0">
+              <p className="truncate text-sm font-medium text-slate-100">
+                {user.name}
+              </p>
+              <p className="truncate text-xs capitalize text-slate-500">
+                {user.role} User
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={logout}
+              className="shrink-0 text-xs text-slate-500 underline hover:text-slate-300"
+            >
+              Logout
+            </button>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-2">
+            <p className="text-xs text-slate-500">Not signed in</p>
+            <NavLink to="/login">
+              <Button variant="primary" className="w-full">
+                Login
+              </Button>
+            </NavLink>
+            <NavLink to="/register" className="text-center text-xs text-orange-400">
+              Create an account
+            </NavLink>
+          </div>
+        )}
       </div>
     </aside>
   );

@@ -1,14 +1,10 @@
+import { useEffect, useState } from "react";
 import {
-  AirVent,
-  Refrigerator,
-  WashingMachine,
-  Microwave,
-  Tv,
-  Printer,
-  type LucideIcon,
+  AirVent, Refrigerator, WashingMachine, Microwave, Tv, Printer, type LucideIcon,
 } from "lucide-react";
 import { DeviceCard } from "@/features/dashboard/DeviceCard";
 import { MOCK_DEVICES } from "@/features/dashboard/mockDevices";
+import { dashboardService } from "@/services/dashboard.service";
 
 const DEVICE_ICONS: Record<string, LucideIcon> = {
   ac: AirVent,
@@ -20,21 +16,23 @@ const DEVICE_ICONS: Record<string, LucideIcon> = {
 };
 
 export function DeviceCategoryGrid() {
+  const [counts, setCounts] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    dashboardService.getCategoryCounts().then(setCounts).catch(() => setCounts({}));
+  }, []);
+
   return (
     <div>
       <div className="mb-3 flex items-center justify-between">
-        <h2 className="text-sm font-semibold text-slate-100">
-          Device Categories
-        </h2>
-        <span className="text-xs text-slate-500">
-          {MOCK_DEVICES.length} categories
-        </span>
+        <h2 className="text-sm font-semibold text-slate-100">Device Categories</h2>
+        <span className="text-xs text-slate-500">{MOCK_DEVICES.length} categories</span>
       </div>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
         {MOCK_DEVICES.map((device) => (
           <DeviceCard
             key={device.id}
-            device={device}
+            device={{ ...device, guideCount: counts[device.id] ?? 0 }}
             icon={DEVICE_ICONS[device.id]}
           />
         ))}

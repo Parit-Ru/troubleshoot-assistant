@@ -8,6 +8,7 @@ import { UsersModule } from './users/users.module';
 import { ChatModule } from './chat/chat.module';
 import { TroubleshootModule } from './ai/troubleshoot.module';
 import { KnowledgeBaseModule } from './ai/knowledge-base.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -19,6 +20,7 @@ import { KnowledgeBaseModule } from './ai/knowledge-base.module';
     ChatModule,
     TroubleshootModule,
     KnowledgeBaseModule,
+    DashboardModule
   ],
   controllers: [AppController],
   providers: [AppService],
