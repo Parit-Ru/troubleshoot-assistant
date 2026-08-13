@@ -8,10 +8,12 @@ import {
   formatConfidencePercent,
   getConfidenceBadgeVariant,
 } from "@/utils/confidence";
+import { historyService } from "@/services/history.service";
 import type { HistorySession } from "@/features/history/mockSessions";
 
 interface SessionCardProps {
   session: HistorySession;
+  onDeleted: (id: string) => void;
 }
 
 const STATUS_BADGE_VARIANT = {
@@ -20,16 +22,24 @@ const STATUS_BADGE_VARIANT = {
   open: "danger",
 } as const;
 
-export function SessionCard({ session }: SessionCardProps) {
-  // Each card owns its own expand state — independent of every other
-  // card, unlike the single shared `filter` state in SessionList.
+export function SessionCard({ session, onDeleted }: SessionCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
 
-  function handleConfirmDelete() {
-    // No real delete yet — wired to history.service.ts in Phase 6.
-    console.log(`Deleting session ${session.id} (mock only)`);
-    setIsDeleteModalOpen(false);
+  async function handleConfirmDelete() {
+    setIsDeleting(true);
+    setDeleteError(null);
+    try {
+      await historyService.deleteSession(session.id);
+      setIsDeleteModalOpen(false);
+      onDeleted(session.id);
+    } catch (err) {
+      setDeleteError("Failed to delete session. Please try again.");
+    } finally {
+      setIsDeleting(false);
+    }
   }
 
   return (
@@ -52,14 +62,10 @@ export function SessionCard({ session }: SessionCardProps) {
             <p className="mt-1 text-xs text-slate-500">{session.symptom}</p>
           </div>
           <div className="flex items-center gap-3">
-            <Badge
-              variant={getConfidenceBadgeVariant(session.confidenceScore)}
-            >
+            <Badge variant={getConfidenceBadgeVariant(session.confidenceScore)}>
               {formatConfidencePercent(session.confidenceScore)}
             </Badge>
-            <span className="text-xs text-slate-500">
-              {session.createdAt}
-            </span>
+            <span className="text-xs text-slate-500">{session.createdAt}</span>
             {isExpanded ? (
               <ChevronUp className="h-4 w-4 text-slate-500" />
             ) : (
@@ -77,15 +83,12 @@ export function SessionCard({ session }: SessionCardProps) {
               </div>
               <div>
                 <p className="text-slate-500">Messages</p>
-                <p className="text-slate-200">
-                  {session.messageCount} exchanges
-                </p>
+                <p className="text-slate-200">{session.messageCount} exchanges</p>
               </div>
               <div>
                 <p className="text-slate-500">Confidence</p>
                 <p className="text-slate-200">
-                  {formatConfidencePercent(session.confidenceScore)} retrieval
-                  score
+                  {formatConfidencePercent(session.confidenceScore)} retrieval score
                 </p>
               </div>
             </div>
@@ -104,10 +107,7 @@ export function SessionCard({ session }: SessionCardProps) {
 
             <div className="flex gap-2">
               <Button variant="primary">Resume Session →</Button>
-              <Button
-                variant="secondary"
-                onClick={() => setIsDeleteModalOpen(true)}
-              >
+              <Button variant="secondary" onClick={() => setIsDeleteModalOpen(true)}>
                 Delete
               </Button>
             </div>
@@ -124,12 +124,13 @@ export function SessionCard({ session }: SessionCardProps) {
           This will permanently remove this troubleshooting session from your
           history. This action cannot be undone.
         </p>
+        {deleteError && <p className="mb-3 text-sm text-red-400">{deleteError}</p>}
         <div className="flex justify-end gap-2">
-          <Button variant="ghost" onClick={() => setIsDeleteModalOpen(false)}>
+          <Button variant="ghost" onClick={() => setIsDeleteModalOpen(false)} disabled={isDeleting}>
             Cancel
           </Button>
-          <Button variant="primary" onClick={handleConfirmDelete}>
-            Delete
+          <Button variant="primary" onClick={handleConfirmDelete} disabled={isDeleting}>
+            {isDeleting ? "Deleting..." : "Delete"}
           </Button>
         </div>
       </Modal>

@@ -20,10 +20,10 @@ export function SessionList() {
       .listSessions()
       .then(setSessions)
       .catch((err) => {
-        if (err.message.includes('401')) {
-          setError('Please log in to view your troubleshooting history.');
+        if (err.message?.includes("401")) {
+          setError("Please log in to view your troubleshooting history.");
         } else {
-          setError('Failed to load session history.');
+          setError("Failed to load session history.");
         }
       })
       .finally(() => setIsLoading(false));
@@ -40,6 +40,10 @@ export function SessionList() {
     });
   }, [sessions, filter, search]);
 
+  function handleSessionDeleted(id: string) {
+    setSessions((prev) => prev.filter((s) => s.id !== id));
+  }
+
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-between">
@@ -55,12 +59,14 @@ export function SessionList() {
       ) : error ? (
         <p className="text-sm text-red-400">{error}</p>
       ) : filteredSessions.length === 0 ? (
-        <p className="text-sm text-slate-500">
-          No sessions match your filters.
-        </p>
+        <p className="text-sm text-slate-500">No sessions match your filters.</p>
       ) : (
         filteredSessions.map((session) => (
-          <SessionCard key={session.id} session={session} />
+          <SessionCard
+            key={session.id}
+            session={session}
+            onDeleted={handleSessionDeleted}
+          />
         ))
       )}
     </div>

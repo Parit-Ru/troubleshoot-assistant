@@ -41,4 +41,6 @@ export const historyService = {
     const rows = await apiClient.get<BackendSessionRow[]>("/troubleshoot");
     return rows.map(mapToHistorySession);
   },
+  deleteSession: (id: string) =>
+    apiClient.delete<{ success: boolean; id: string }>(`/troubleshoot/${id}`),
 };

@@ -1,0 +1,10 @@
+{
+  "fixbot_troubleshooting": {
+    "file_name": "alpaca_dataset.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

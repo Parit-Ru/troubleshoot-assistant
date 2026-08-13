@@ -1,4 +1,4 @@
-import { Body, Controller, Post, Get, Inject, Req, UseGuards } from '@nestjs/common';
+import { Body, Controller, Post, Get, Delete, Param, Inject, Req, UseGuards } from '@nestjs/common';
 import type { Request } from 'express';
 import { Pool } from 'pg';
 import { RetrievalService } from './retrieval/retrieval.service';
@@ -6,6 +6,7 @@ import { GenerationService } from './generation/generation.service';
 import { PG_POOL } from '../database/database.constants';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { OptionalJwtAuthGuard } from '../auth/optional-jwt-auth.guard';
+import { NotFoundException } from '@nestjs/common';
 
 interface TroubleshootRequestDto {
   symptom: string;
@@ -82,5 +83,21 @@ export class TroubleshootController {
       [userId],
     );
     return result.rows;
+  }
+    @Delete(':id')
+  @UseGuards(JwtAuthGuard)
+  async deleteSession(@Param('id') id: string, @Req() req: Request) {
+    const userId = (req.user as { id: string }).id;
+
+    const result = await this.pool.query(
+      `DELETE FROM troubleshoot_sessions WHERE id = $1 AND user_id = $2 RETURNING id`,
+      [id, userId],
+    );
+
+    if (result.rowCount === 0) {
+      throw new NotFoundException('Session not found or not owned by you');
+    }
+
+    return { success: true, id };
   }
 }
