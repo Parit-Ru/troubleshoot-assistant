@@ -9,6 +9,8 @@ import { ChatPage } from "@/pages/ChatPage";
 import { LoginPage } from "@/pages/LoginPage";
 import { RegisterPage } from "@/pages/RegisterPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
+import { CustomAiPage } from "@/pages/CustomAiPage"; 
+
 
 export const router = createBrowserRouter(
   [
@@ -25,6 +27,7 @@ export const router = createBrowserRouter(
         { path: "history", element: <HistoryPage /> },
         { path: "analytics", element: <AnalyticsPage /> },
         { path: "knowledge-base", element: <KnowledgeBasePage /> },
+        { path: "custom-ai", element: <CustomAiPage /> },
       ],
     },
     { path: "*", element: <NotFoundPage /> },

@@ -9,6 +9,8 @@ import { ChatModule } from './chat/chat.module';
 import { TroubleshootModule } from './ai/troubleshoot.module';
 import { KnowledgeBaseModule } from './ai/knowledge-base.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { CustomAiModule } from './custom-ai/custom-ai.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -20,7 +22,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
     ChatModule,
     TroubleshootModule,
     KnowledgeBaseModule,
-    DashboardModule
+    DashboardModule,
+    CustomAiModule,
   ],
   controllers: [AppController],
   providers: [AppService],

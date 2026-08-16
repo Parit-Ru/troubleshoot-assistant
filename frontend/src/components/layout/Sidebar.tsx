@@ -16,6 +16,7 @@ const NAV_ITEMS = [
   { to: "/history", label: "History" },
   { to: "/analytics", label: "Analytics" },
   { to: "/knowledge-base", label: "Knowledge Base" },
+  { to: "/custom-ai", label: "Custom AI" },
 ];
 
 export function Sidebar() {
