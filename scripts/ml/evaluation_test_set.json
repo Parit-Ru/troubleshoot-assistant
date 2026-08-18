@@ -1,0 +1,92 @@
+[
+  {
+    "id": "T01",
+    "device": "Microwave",
+    "symptom": "None of the buttons on my microwave seem to respond when I press them",
+    "expected_cause_keywords": ["foreign matter", "moisture", "child lock"]
+  },
+  {
+    "id": "T02",
+    "device": "Microwave",
+    "symptom": "My microwave clock disappeared and won't show up again",
+    "expected_cause_keywords": ["eco", "power-saving"]
+  },
+  {
+    "id": "T03",
+    "device": "Microwave",
+    "symptom": "Nothing happens at all when I try to start the microwave",
+    "expected_cause_keywords": ["power", "door", "safety mechanism"]
+  },
+  {
+    "id": "T04",
+    "device": "Microwave",
+    "symptom": "It shuts off by itself partway through a long cook",
+    "expected_cause_keywords": ["extended cooking", "cooling fan", "ventilation", "socket"]
+  },
+  {
+    "id": "T05",
+    "device": "Microwave",
+    "symptom": "There's smoke coming out while it's preheating",
+    "expected_cause_keywords": ["smoke", "preheat"]
+  },
+  {
+    "id": "T06",
+    "device": "Refrigerator",
+    "symptom": "I hear a weird gurgling noise coming from inside the fridge",
+    "expected_cause_keywords": ["refrigerant", "normal"]
+  },
+  {
+    "id": "T07",
+    "device": "Refrigerator",
+    "symptom": "Ice just isn't forming in the ice maker anymore",
+    "expected_cause_keywords": ["ice maker"]
+  },
+  {
+    "id": "T08",
+    "device": "Refrigerator",
+    "symptom": "There's water droplets building up on the inside walls of the fridge",
+    "expected_cause_keywords": ["condensation"]
+  },
+  {
+    "id": "T09",
+    "device": "Refrigerator",
+    "symptom": "My fridge app on my phone won't connect no matter what I try",
+    "expected_cause_keywords": ["smartthings", "connect", "wifi"]
+  },
+  {
+    "id": "T10",
+    "device": "Refrigerator",
+    "symptom": "There's a bad smell every time I open the fridge door",
+    "expected_cause_keywords": ["odour", "odor", "smell"]
+  },
+  {
+    "id": "T11",
+    "device": "Washing Machine",
+    "symptom": "Pressing start does absolutely nothing on my washer",
+    "expected_cause_keywords": ["does not start"]
+  },
+  {
+    "id": "T12",
+    "device": "Washing Machine",
+    "symptom": "My clothes come out still soaking wet after the full cycle finishes",
+    "expected_cause_keywords": ["wet", "end of cycle"]
+  },
+  {
+    "id": "T13",
+    "device": "Washing Machine",
+    "symptom": "Water just keeps overflowing out of the machine",
+    "expected_cause_keywords": ["overflow", "OC"]
+  },
+  {
+    "id": "T14",
+    "device": "Washing Machine",
+    "symptom": "I'm seeing error code 5C on the display and it won't proceed",
+    "expected_cause_keywords": ["draining", "5C"]
+  },
+  {
+    "id": "T15",
+    "device": "Washing Machine",
+    "symptom": "The washer is shaking violently and making loud banging noises",
+    "expected_cause_keywords": ["vibration", "noise"]
+  }
+]

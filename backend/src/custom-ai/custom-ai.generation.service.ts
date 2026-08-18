@@ -42,11 +42,16 @@ export class CustomAiGenerationService {
       };
     }
 
-    // Use the single best-matching chunk as context — same shape the model
-    // was trained on (one retrieved chunk per answer).
-    const topChunk = chunks[0];
-    const context =
-      `[Retrieved chunk — ${topChunk.source}, Page ${topChunk.page}]\n${topChunk.content}`;
+    // Use the top 2-3 chunks as context, not just the single best match.
+    // Evaluation found that top-1-only retrieval was fragile — when the
+    // single best match wasn't quite right (e.g. "overflow" vs "leaks"),
+    // the model had nothing to fall back on. Including more candidates
+    // gives it a better chance of grounding on the actually-correct one,
+    // the same way the Groq baseline (which uses top-5) does.
+    const usedChunks = chunks.slice(0, Math.min(3, chunks.length));
+    const context = usedChunks
+      .map((c) => `[Retrieved chunk — ${c.source}, Page ${c.page}]\n${c.content}`)
+      .join('\n\n');
 
     try {
       const response = await fetch(`${modelUrl}/generate`, {
@@ -64,12 +69,12 @@ export class CustomAiGenerationService {
       }
 
       const data = (await response.json()) as { output: string };
-      const sanitized = this.sanitizeReferences(data.output, topChunk);
+      const sanitized = this.sanitizeReferences(data.output, usedChunks);
 
       return {
         available: true,
         rawAnswer: sanitized,
-        references: [{ source: topChunk.source, page: topChunk.page }],
+        references: usedChunks.map((c) => ({ source: c.source, page: c.page })),
         insufficientEvidence: false,
         errorMessage: null,
       };
@@ -87,15 +92,16 @@ export class CustomAiGenerationService {
   }
 
   // Never trust the model's self-generated "## References" section — rebuild
-  // it deterministically from the chunk we actually retrieved, since the
+  // it deterministically from the chunks we actually retrieved, since the
   // model has shown it can hallucinate citations (e.g. fabricated URLs) on
   // underrepresented training examples.
-  private sanitizeReferences(modelOutput: string, chunk: RetrievedChunk): string {
+  private sanitizeReferences(modelOutput: string, chunks: RetrievedChunk[]): string {
     const referencesIndex = modelOutput.indexOf('## References');
     const trustedPortion =
       referencesIndex >= 0 ? modelOutput.slice(0, referencesIndex).trim() : modelOutput.trim();
 
-    const trueReferences = `## References\n${chunk.source} — Page ${chunk.page}`;
+    const referenceLines = chunks.map((c) => `${c.source} — Page ${c.page}`).join('\n');
+    const trueReferences = `## References\n${referenceLines}`;
     return `${trustedPortion}\n\n${trueReferences}`;
   }
 }

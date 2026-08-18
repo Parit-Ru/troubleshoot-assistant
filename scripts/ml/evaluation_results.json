@@ -1,0 +1,1164 @@
+[
+  {
+    "id": "T01",
+    "device": "Microwave",
+    "symptom": "None of the buttons on my microwave seem to respond when I press them",
+    "expected_cause_keywords": [
+      "foreign matter",
+      "moisture",
+      "child lock"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Buttons cannot be pressed properly",
+        "possibleCauses": [
+          "Foreign matter",
+          "Moisture on exterior (touch models)",
+          "Child lock activated"
+        ],
+        "confidence": 0.736238316521746,
+        "solutionSteps": [
+          "Remove foreign matter",
+          "Wipe moisture from exterior",
+          "Deactivate child lock"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 41
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 42
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 42
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "0bb81a1c-41a8-4bd3-b58f-3d3d27b3ae15",
+        "createdAt": "2026-08-18T05:59:30.992Z"
+      },
+      "latency_seconds": 3.99
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nButtons cannot be pressed properly\n\n## Possible Cause\n- Foreign matter; Moisture on exterior (touch models); Child lock activated\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Remove foreign matter.\n2. Wipe moisture.\n3. Deactivate Child Lock.\n\n## References\nMG23T5018CC_ST_DE68_04594R_00_TH_EN_210624 — Page 39",
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 8.27
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T02",
+    "device": "Microwave",
+    "symptom": "My microwave clock disappeared and won't show up again",
+    "expected_cause_keywords": [
+      "eco",
+      "power-saving"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Time is not displayed",
+        "possibleCauses": [
+          "Eco function is set"
+        ],
+        "confidence": 0.699660259505496,
+        "solutionSteps": [
+          "Turn off the Eco function"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 41
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 42
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "882f27ce-2aea-4177-89cc-6869b6f54194",
+        "createdAt": "2026-08-18T05:59:42.261Z"
+      },
+      "latency_seconds": 1.95
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nTime is not displayed\n\n## Possible Cause\n- Eco function is set\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Turn off the Eco function.\n\n## References\nMG23T5018CC_ST_DE68_04594R_00_TH_EN_210624 — Page 39",
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 6.48
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T03",
+    "device": "Microwave",
+    "symptom": "Nothing happens at all when I try to start the microwave",
+    "expected_cause_keywords": [
+      "power",
+      "door",
+      "safety mechanism"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Microwave does not work",
+        "possibleCauses": [
+          "No power supplied",
+          "Door is open",
+          "Foreign matter blocking door safety mechanisms"
+        ],
+        "confidence": 0.731902382728529,
+        "solutionSteps": [
+          "Make sure power is supplied",
+          "Close the door",
+          "Remove any foreign matter"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 41
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 40
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 40
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 42
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "e767d9a3-f67b-44c4-899d-7b2cd7504581",
+        "createdAt": "2026-08-18T05:59:52.667Z"
+      },
+      "latency_seconds": 3.04
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nMicrowave does not work\n\n## Possible Cause\n- No power; Door open; Door safety mechanisms blocked\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Make sure power is supplied.\n2. Close the door.\n3. Remove foreign matter.\n\n## References\nMG23T5018CC_ST_DE68_04594R_00_TH_EN_210624 — Page 39",
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 8.9
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T04",
+    "device": "Microwave",
+    "symptom": "It shuts off by itself partway through a long cook",
+    "expected_cause_keywords": [
+      "extended cooking",
+      "cooling fan",
+      "ventilation",
+      "socket"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Power turns off during operation (shuts off by itself partway through a long cook)",
+        "possibleCauses": [
+          "Extended cooking",
+          "Cooling fan not working",
+          "No food inside",
+          "Poor ventilation",
+          "Shared socket"
+        ],
+        "confidence": 0.754201412200928,
+        "solutionSteps": [
+          "Let the oven cool.",
+          "Check the cooling fan.",
+          "Make sure food is inside the oven.",
+          "Keep ventilation gaps clear.",
+          "Use a dedicated electrical socket."
+        ],
+        "safetyWarnings": [
+          "Let the microwave oven cool after extended cooking."
+        ],
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 40
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 40
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "9fe5a31b-cd45-42b9-b237-462034eed5a6",
+        "createdAt": "2026-08-18T06:00:05.361Z"
+      },
+      "latency_seconds": 2.68
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nPower turns off during operation\n\n## Possible Cause\n- Extended cooking; Cooling fan not working; No food inside; Poor ventilation; Shared socket\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Let oven cool.\n2. Check cooling fan.\n3. Put food in.\n4. Keep ventilation gaps.\n5. Use one socket only.\n\n## Safety\n⚠️ Let the microwave oven cool after extended cooking.\n\n## References\nMG23T5018CC_ST_DE68_04594R_00_TH_EN_210624 — Page 39",
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 39
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 10.25
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T05",
+    "device": "Microwave",
+    "symptom": "There's smoke coming out while it's preheating",
+    "expected_cause_keywords": [
+      "smoke",
+      "preheat"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Smoke during preheating",
+        "possibleCauses": [
+          "Initial use",
+          "Food on heating elements"
+        ],
+        "confidence": 0.858457139638493,
+        "solutionSteps": [
+          "Run the microwave 2-3 times if it's the initial use",
+          "Remove food after the oven has cooled"
+        ],
+        "safetyWarnings": [
+          "Let the microwave oven cool before removing food"
+        ],
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 41
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 41
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 41
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 40
+          },
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 40
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "911d637d-4c5d-4d0a-ad3c-f4037fe9d352",
+        "createdAt": "2026-08-18T06:00:19.410Z"
+      },
+      "latency_seconds": 2.79
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nSmoke from heating elements during preheating\n\n## Possible Cause\n- Food on top; Initial use\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Remove food.\n2. Use several times if initial use.\n\n## Safety\n⚠️ Let the microwave oven cool before removing food.\n\n## References\nMG23T5018CC_ST_DE68_04594R_00_TH_EN_210624 — Page 41",
+        "references": [
+          {
+            "source": "MG23T5018CC_ST_DE68_04594R_00_TH_EN_210624",
+            "page": 41
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 8.38
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T06",
+    "device": "Refrigerator",
+    "symptom": "I hear a weird gurgling noise coming from inside the fridge",
+    "expected_cause_keywords": [
+      "refrigerant",
+      "normal"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Weird gurgling noise coming from inside the fridge",
+        "possibleCauses": [
+          "Bubbling sounds caused by refrigerant gas moving through sealed pipes as the refrigerator cools or freezes"
+        ],
+        "confidence": 0.734597027301788,
+        "solutionSteps": [
+          "The sound is normal and no action is required"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 52
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 51
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 49
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "89b2dd1b-6e24-4919-bf32-d9e1a4b7b18f",
+        "createdAt": "2026-08-18T06:00:30.850Z"
+      },
+      "latency_seconds": 2.06
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nRefrigerator makes bubbling/cracking/buzzing/whooshing sounds\n\n## Possible Cause\n- Refrigerant gas moving through sealed pipes (refrigerator cooling/freezing); contraction/expansion of plastic/plastic parts/digital components (defrosting/electronics); water valve action for ice makers; pressure equalization at door openings.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n\n## References\nmanual_Samsung_Refrigerator_RT6300C — Page 52",
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 52
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 8.36
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T07",
+    "device": "Refrigerator",
+    "symptom": "Ice just isn't forming in the ice maker anymore",
+    "expected_cause_keywords": [
+      "ice maker"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Ice maker does not produce ice",
+        "possibleCauses": [
+          "Freezer room not cold enough",
+          "Wire connector of ice maker not connected properly",
+          "Water line flowing to ice maker bent or kinked"
+        ],
+        "confidence": 0.696564379027282,
+        "solutionSteps": [
+          "Make sure the cold air outlet is not clogged",
+          "Make sure the wire connector from the wire housing is connected properly",
+          "Make sure the water line in the rear of the refrigerator is not bent or kinked"
+        ],
+        "safetyWarnings": [
+          "Wire connector of the ice maker"
+        ],
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 52
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 49
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 49
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 51
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "9cc56df4-f535-4b67-a22b-e9fc715d830e",
+        "createdAt": "2026-08-18T06:00:42.649Z"
+      },
+      "latency_seconds": 2.44
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nDoes not produce ice\n\n## Possible Cause\n- Freezer room not cold enough; wire connector not connected properly; water line bent/kinked.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Make sure the cold air outlet is not clogged.\n2. Make sure the wire connector from the wire housing is connected properly.\n3. Make sure the water line in the rear of the refrigerator is not bent or kinked.\n\n## References\nmanual_Samsung_Refrigerator_RT6300C — Page 50",
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 9.25
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T08",
+    "device": "Refrigerator",
+    "symptom": "There's water droplets building up on the inside walls of the fridge",
+    "expected_cause_keywords": [
+      "condensation"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Condensation forming on interior walls",
+        "possibleCauses": [
+          "Door left open allowing moisture to enter",
+          "Food with high moisture content stored"
+        ],
+        "confidence": 0.75700306892395,
+        "solutionSteps": [
+          "Remove the moisture and keep the door closed for a long time",
+          "Make sure food is wrapped airtight"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 49
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 49
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 51
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 52
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "059ed72a-1fb2-486d-88d4-c6028ca870a8",
+        "createdAt": "2026-08-18T06:00:56.082Z"
+      },
+      "latency_seconds": 3.21
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nCondensation forms on the interior walls\n\n## Possible Cause\n- Door left open allowing moisture to enter, or food with high moisture content.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Remove the moisture.\n2. Do not open the door for a long time.\n3. Make sure food is wrapped airtight.\n\n## References\nmanual_Samsung_Refrigerator_RT6300C — Page 50",
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 7.88
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T09",
+    "device": "Refrigerator",
+    "symptom": "My fridge app on my phone won't connect no matter what I try",
+    "expected_cause_keywords": [
+      "smartthings",
+      "connect",
+      "wifi"
+    ],
+    "groq": {
+      "response": {
+        "problem": "SmartThings app on phone cannot connect to refrigerator",
+        "possibleCauses": [
+          "Not logged into Samsung account",
+          "Router not operating normally",
+          "Refrigerator not registered or connected to home access point",
+          "Using an incompatible or old SmartThings app version",
+          "App or router connection glitch"
+        ],
+        "confidence": 0.758648991584778,
+        "solutionSteps": [
+          "Log into your Samsung account in the SmartThings app",
+          "Verify the router is operating normally and has stable Wi‑Fi",
+          "If the Wi‑Fi icon on the refrigerator display is off, use the SmartThings app to connect and register the refrigerator to your home access point",
+          "Exit and restart the SmartThings app, or disconnect and reconnect the router",
+          "Power off the refrigerator, wait about 1 minute, then power it back on",
+          "Ensure you are using the SmartThings app (not the old Samsung Smart Refrigerator app) compatible with your model"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 53
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 53
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 53
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 53
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 53
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "20c9fc7c-81ac-4653-af73-b41e46a143bf",
+        "createdAt": "2026-08-18T06:01:07.786Z"
+      },
+      "latency_seconds": 2.79
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nThe SmartThings app is successfully connected to my refrigerator but does not run\n\n## Possible Cause\n- App glitch; possibly caused by changes in other apps.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Exit and restart the SmartThings app, or disconnect and reconnect the router.\n2. Power off the refrigerator, and then power it on again after 1 minute.\n\n## References\nmanual_Samsung_Refrigerator_RT6300C — Page 53",
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 53
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 8.34
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T10",
+    "device": "Refrigerator",
+    "symptom": "There's a bad smell every time I open the fridge door",
+    "expected_cause_keywords": [
+      "odour",
+      "odor",
+      "smell"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Bad smell every time the fridge door is opened",
+        "possibleCauses": [
+          "Spoiled food",
+          "Food with strong odors"
+        ],
+        "confidence": 0.747090339660645,
+        "solutionSteps": [
+          "Clean the refrigerator and remove any spoiled food",
+          "Wrap strong smelling food airtight"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 49
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 51
+          },
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 49
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "2eeb2b43-e11f-46ab-8f3e-bae502ac6ba1",
+        "createdAt": "2026-08-18T06:01:19.276Z"
+      },
+      "latency_seconds": 2.15
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nRefrigerator has odours\n\n## Possible Cause\n- Spoiled food or food with strong odours.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Clean the refrigerator.\n2. Remove any spoiled food.\n3. Make sure strong-smelling food is wrapped airtight.\n\n## References\nmanual_Samsung_Refrigerator_RT6300C — Page 50",
+        "references": [
+          {
+            "source": "manual_Samsung_Refrigerator_RT6300C",
+            "page": 50
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 6.94
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T11",
+    "device": "Washing Machine",
+    "symptom": "Pressing start does absolutely nothing on my washer",
+    "expected_cause_keywords": [
+      "does not start"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Pressing start does absolutely nothing on my washer",
+        "possibleCauses": [
+          "Unplugged power",
+          "Door open",
+          "Water taps closed",
+          "Start/Pause not pressed",
+          "Child Lock activated",
+          "Blown fuse or circuit breaker",
+          "Insufficient power supply"
+        ],
+        "confidence": 0.722413539886475,
+        "solutionSteps": [
+          "Make sure the washing machine is plugged in.",
+          "Make sure the door is properly closed.",
+          "Make sure the water taps are open.",
+          "Make sure to press Start/Pause to start the washing machine.",
+          "Make sure Child Lock is not activated.",
+          "Check the fuse or reset the circuit breaker."
+        ],
+        "safetyWarnings": [
+          "Check the fuse or reset the circuit breaker."
+        ],
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 45
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "8e64af4b-063c-4730-9d48-d7c97091a3df",
+        "createdAt": "2026-08-18T06:01:29.798Z"
+      },
+      "latency_seconds": 2.58
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nDoes not start\n\n## Possible Cause\n- Unplugged power, door open, water taps shut off, Start/Pause not pressed, Child Lock active, or blown fuse/circuit breaker.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Verify the washing machine is plugged in.\n2. Verify the door is properly closed.\n3. Verify the water taps are open.\n4. Make sure to press Start/Pause to start the washing machine.\n5. Make sure Child Lock is not activated.\n6. Check the fuse or reset the circuit breaker.\n\n## Safety\n⚠️ Check the fuse or reset the circuit breaker.\n\n## References\nOID84209_IB_WW3000FM-MD_EN_TH_250612.pdf — Page 45",
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 45
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 12.69
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T12",
+    "device": "Washing Machine",
+    "symptom": "My clothes come out still soaking wet after the full cycle finishes",
+    "expected_cause_keywords": [
+      "wet",
+      "end of cycle"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Load is wet at the end of a cycle",
+        "possibleCauses": [
+          "Low spin speed setting",
+          "Oversudsing from non-HE detergent",
+          "Small load becoming unbalanced",
+          "Kinked or clogged drain hose"
+        ],
+        "confidence": 0.773342559338441,
+        "solutionSteps": [
+          "Use the High or Extra High spin speed",
+          "Use high efficiency (HE) detergent to reduce oversudsing",
+          "Avoid small loads (one or two items) that may become unbalanced",
+          "Make sure the drain hose is not kinked or clogged"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 47
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 47
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "bb4783db-f6bc-4d06-8ab4-21ec0992dffc",
+        "createdAt": "2026-08-18T06:01:46.972Z"
+      },
+      "latency_seconds": 3.48
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nLoad is wet at the end of a cycle\n\n## Possible Cause\n- Low spin speed used; oversudsing from HE detergent; improperly balanced load due to very small initial load; drain hose kink/clog.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Use High or Extra High spin speed.\n2. Use high efficiency (HE) detergent to reduce oversudsing.\n3. Avoid using one or two items as this can cause the load to be unbalanced and not spin completely.\n4. Ensure the drain hose is not kinked or clogged.\n\n## References\nOID84209_IB_WW3000FM-MD_EN_TH_250612.pdf — Page 47",
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 47
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 11.84
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T13",
+    "device": "Washing Machine",
+    "symptom": "Water just keeps overflowing out of the machine",
+    "expected_cause_keywords": [
+      "overflow",
+      "OC"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Water is overflowing and leaking from the washing machine",
+        "possibleCauses": [
+          "Water overflow"
+        ],
+        "confidence": 0.705082157102762,
+        "solutionSteps": [
+          "Restart the machine after it finishes spinning",
+          "If the OC information code remains on the display, contact a local Samsung service centre"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 47
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 48
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 45
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 48
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "8e8bbef9-4712-4cee-80aa-174e4094cdf8",
+        "createdAt": "2026-08-18T06:02:02.960Z"
+      },
+      "latency_seconds": 3.14
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nLeaks water\n\n## Possible Cause\n- Door not properly closed, loose hose connections, drain hose improperly inserted/unsure about securing, overloading, oversudsing from HE detergent, object stuck between door and diaphragm.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Make sure the door is properly closed.\n2. Make sure all hose connections are tight.\n3. Make sure the end of the drain hose is correctly inserted and secured to the drain system.\n4. Avoid overloading.\n5. Use high efficiency (HE) detergent to prevent oversudsing.\n6. Check if there is something stuck between the door and the diaphragm and remove it.\n\n## References\nOID84209_IB_WW3000FM-MD_EN_TH_250612.pdf — Page 47",
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 47
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 13.35
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T14",
+    "device": "Washing Machine",
+    "symptom": "I'm seeing error code 5C on the display and it won't proceed",
+    "expected_cause_keywords": [
+      "draining",
+      "5C"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Error code 5C displayed – water is not draining",
+        "possibleCauses": [
+          "Drain hose is frozen",
+          "Drain hose is clogged",
+          "Drain hose is incorrectly positioned",
+          "Debris filter is clogged",
+          "Drain hose is not fully straightened"
+        ],
+        "confidence": 0.783305406570435,
+        "solutionSteps": [
+          "Make sure the drain hose is not frozen or clogged",
+          "Ensure the drain hose is positioned correctly for the connection type",
+          "Clean the debris filter as it may be clogged",
+          "Straighten the drain hose all the way to the drain system",
+          "If the error code remains, contact a customer service centre"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 48
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 48
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 50
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 48
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 50
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "5b3c2688-8ae8-455b-84e6-ca29bc0d2748",
+        "createdAt": "2026-08-18T06:02:20.405Z"
+      },
+      "latency_seconds": 3.1
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nInformation code 5C - Water is not draining\n\n## Possible Cause\n- Frozen/clogged drain hose; Drain hose not positioned correctly (depending on connection type); Clogged debris filter; Drain hose not straightened all the way to the drain system.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Make sure the drain hose is not frozen or clogged.\n2. Make sure the drain hose is positioned correctly, depending on the connection type.\n3. Clean the debris filter as it may be clogged.\n4. Make sure the drain hose is straightened all the way to the drain system.\n5. If the information code remains, contact a customer service centre.\n\n## References\nOID84209_IB_WW3000FM-MD_EN_TH_250612.pdf — Page 48",
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 48
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 13.56
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  },
+  {
+    "id": "T15",
+    "device": "Washing Machine",
+    "symptom": "The washer is shaking violently and making loud banging noises",
+    "expected_cause_keywords": [
+      "vibration",
+      "noise"
+    ],
+    "groq": {
+      "response": {
+        "problem": "Excessive vibrations and loud banging noises",
+        "possibleCauses": [
+          "Unlevel or slippery floor",
+          "Unremoved shipping bolts",
+          "Contact with other objects",
+          "Unbalanced laundry load",
+          "Normal motor operation",
+          "Overalls or metal‑decorated clothes",
+          "Loose metal objects such as coins"
+        ],
+        "confidence": 0.737823985154152,
+        "solutionSteps": [
+          "Ensure the washing machine is installed on a level, solid, non‑slippery floor; adjust the levelling feet if needed",
+          "Remove any shipping bolts that may still be installed",
+          "Check that the machine is not contacting any nearby objects",
+          "Balance the laundry load inside the drum",
+          "Remove metal objects such as coins from the drum or filter case after washing"
+        ],
+        "safetyWarnings": [],
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 45
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 46
+          },
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 47
+          }
+        ],
+        "insufficientEvidence": false,
+        "sessionId": "7df8bc8f-7665-4015-ad64-afbeb6715414",
+        "createdAt": "2026-08-18T06:02:38.031Z"
+      },
+      "latency_seconds": 3.08
+    },
+    "fine_tuned": {
+      "response": {
+        "available": true,
+        "rawAnswer": "## Problem\nExcessive vibrations/noise\n\n## Possible Cause\n- Unlevel/unstable installation surface/floor, unremoved shipping bolts, contact with other objects, unbalanced laundry load, normal motor operation, overalls/metal-decorated clothes causing noise (normal), or loose metal objects like coins.\n\n## Confidence\nHigh (matched directly from official documentation)\n\n## Solution\n1. Ensure the washing machine is installed on a flat, stable non-slippery floor and use levelling feet if necessary.\n2. Remove shipping bolts.\n3. Move away from other objects.\n4. Balance the laundry load.\n5. Remove metal objects like coins from the drum or filter case after each wash.\n\n## References\nOID84209_IB_WW3000FM-MD_EN_TH_250612.pdf — Page 45",
+        "references": [
+          {
+            "source": "OID84209_IB_WW3000FM-MD_EN_TH_250612.pdf",
+            "page": 45
+          }
+        ],
+        "insufficientEvidence": false,
+        "errorMessage": null
+      },
+      "latency_seconds": 13.06
+    },
+    "manual_scoring": {
+      "groq_format_adherence": null,
+      "groq_grounding_accuracy": null,
+      "groq_reference_accuracy": null,
+      "fine_tuned_format_adherence": null,
+      "fine_tuned_grounding_accuracy": null,
+      "fine_tuned_reference_accuracy": null,
+      "notes": ""
+    }
+  }
+]
